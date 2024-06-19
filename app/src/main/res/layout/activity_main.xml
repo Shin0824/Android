@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="나만의 룰렛"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/numSections"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="항목의 갯수를 입력하세요"
+        android:inputType="number"
+        android:padding="8dp"
+        android:marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/setupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="설정"
+        android:background="#00796B"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/sectionsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/spinButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="룰렛 돌리기"
+        android:background="#00796B"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:visibility="gone"/>
+</LinearLayout>
